@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leadership_programmes_comparison (5)</title>
+    <style>
+    
+    /* ── Base ───────────────────────────────────────────── */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.65;
+        color: #1f2937;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px 0px 40px 0px;
+        background-color: #ffffff;
+    }
+
+    /* ── Headings ──────────────────────────────────────── */
+
+    h1 {
+        font-size: 24pt;
+        font-weight: 700;
+        color: #0f172a;
+        margin-top: 0;
+        margin-bottom: 6pt;
+        padding-bottom: 10pt;
+        border-bottom: 3px solid #2563eb;
+        letter-spacing: -0.3px;
+    }
+
+    h2 {
+        font-size: 17pt;
+        font-weight: 700;
+        color: #1e3a5f;
+        margin-top: 32pt;
+        margin-bottom: 10pt;
+        padding-bottom: 6pt;
+        border-bottom: 2px solid #bfdbfe;
+    }
+
+    h3 {
+        font-size: 13pt;
+        font-weight: 600;
+        color: #1e40af;
+        margin-top: 24pt;
+        margin-bottom: 8pt;
+    }
+
+    h4 {
+        font-size: 11pt;
+        font-weight: 600;
+        color: #374151;
+        margin-top: 18pt;
+        margin-bottom: 6pt;
+    }
+
+    h5, h6 {
+        font-size: 10pt;
+        font-weight: 600;
+        color: #4b5563;
+        margin-top: 14pt;
+        margin-bottom: 4pt;
+    }
+
+    /* ── Paragraphs ────────────────────────────────────── */
+
+    p {
+        margin-top: 0;
+        margin-bottom: 10pt;
+    }
+
+    /* ── Links ─────────────────────────────────────────── */
+
+    a {
+        color: #2563eb;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* ── Bold / Italic ─────────────────────────────────── */
+
+    strong {
+        font-weight: 600;
+        color: #111827;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    /* ── Horizontal Rule (hidden) ──────────────────────── */
+
+    hr {
+        display: none;
+    }
+
+    /* ── Blockquotes ───────────────────────────────────── */
+
+    blockquote {
+        margin: 14pt 0;
+        padding: 12pt 16pt;
+        border-left: 4px solid #2563eb;
+        background-color: #eff6ff;
+        border-radius: 0 6px 6px 0;
+        color: #1e40af;
+        font-size: 9.5pt;
+    }
+
+    blockquote p {
+        margin-bottom: 4pt;
+    }
+
+    blockquote p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ── Lists ─────────────────────────────────────────── */
+
+    ul, ol {
+        margin-top: 4pt;
+        margin-bottom: 10pt;
+        padding-left: 24pt;
+    }
+
+    li {
+        margin-bottom: 4pt;
+    }
+
+    li > ul, li > ol {
+        margin-top: 3pt;
+        margin-bottom: 3pt;
+    }
+
+    /* ── Tables ─────────────────────────────────────────── */
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14pt 0;
+        font-size: 10pt;
+        line-height: 1.5;
+    }
+
+    thead th {
+        background-color: #1e3a5f;
+        color: white;
+        font-weight: 600;
+        text-align: left;
+        padding: 8pt 10pt;
+        font-size: 10pt;
+    }
+
+    td {
+        padding: 7pt 10pt;
+        border-bottom: 1px solid #e5e7eb;
+        vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
+        background-color: #eff6ff;
+    }
+
+    /* ── Code ──────────────────────────────────────────── */
+
+    code {
+        font-family: 'Cascadia Code', 'Fira Code', 'Consolas', 'Courier New', monospace;
+        font-size: 9pt;
+        background-color: #f1f5f9;
+        padding: 2pt 5pt;
+        border-radius: 3px;
+        color: #be185d;
+        border: 1px solid #e2e8f0;
+    }
+
+    pre {
+        background-color: #1e293b;
+        color: #e2e8f0;
+        padding: 14pt;
+        border-radius: 6px;
+        overflow-x: auto;
+        font-size: 8.5pt;
+        line-height: 1.6;
+        margin: 12pt 0;
+    }
+
+    pre code {
+        background: none;
+        padding: 0;
+        border: none;
+        color: inherit;
+        font-size: inherit;
+    }
+
+    /* ── Table of Contents ─────────────────────────────── */
+
+    .toc {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 16pt 22pt;
+        margin: 16pt 0 28pt 0;
+    }
+
+    .toc ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .toc > ul > li {
+        margin-bottom: 4pt;
+    }
+
+    .toc ul ul {
+        padding-left: 18pt;
+        margin-top: 2pt;
+    }
+
+    .toc a {
+        color: #1e40af;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+    .toc a:hover {
+        text-decoration: underline;
+    }
+
+    /* ── Print styles ──────────────────────────────────── */
+
+    @media print {
+        body {
+            max-width: 100%;
+            padding: 0;
+            font-size: 9pt;
+        }
+        h1 { font-size: 20pt; }
+        h2 { font-size: 15pt; break-after: avoid; }
+        h3 { font-size: 12pt; break-after: avoid; }
+        table { font-size: 8.5pt; break-inside: auto; }
+        tr { break-inside: avoid; }
+        blockquote { break-inside: avoid; }
+        .toc { break-inside: avoid; }
+    }
+    
+    </style>
+</head>
+<body>
+<h1 id="leadership-programmes-comparison">Leadership Programmes Comparison</h1>
+<p><em>Solstrand (AFF/NHH) · INSEAD Open Programmes · BI Norwegian Business School Executive MBA · IMD · London Business School · Oxford Saïd · Cambridge Judge</em>
+<em>Compiled March 2026 — based on official programme brochures and website data</em></p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<h3 id="at-a-glance">At a Glance</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Programme</th>
+<th>Provider</th>
+<th>Lang</th>
+<th>Duration</th>
+<th>Format</th>
+<th>Price (approx.)</th>
+<th>Level</th>
+<th>Core Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>INSEAD Collaborative Leadership</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>5 days</td>
+<td>Residential, Fontainebleau</td>
+<td>€11,200–11,600 + accom</td>
+<td>Experienced GMs &amp; HR leaders</td>
+<td>Decentralised orgs, holacracy, agile, psychological safety</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>INSEAD High Impact Leadership</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>5 days</td>
+<td>Residential, Fontainebleau</td>
+<td>€11,600 + accom</td>
+<td>Functional managers (3–6 yrs)</td>
+<td>X-teams, leadership behaviours, self-awareness, video feedback</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>INSEAD Leading Teams</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>5 days</td>
+<td>Residential, Fontainebleau</td>
+<td>€11,200 + accom</td>
+<td>Functional manager → C-level</td>
+<td>Team dynamics, conflict, decision biases, persuasion &amp; negotiation</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>INSEAD Leading Successful Change</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>4 days</td>
+<td>Residential, Fontainebleau</td>
+<td>€9,450–9,800 + accom</td>
+<td>Mid–upper mgmt (8+ yrs)</td>
+<td>Change frameworks, resistance, stakeholder dynamics, simulation</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>INSEAD Leading Change: Digital</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>4 days</td>
+<td>Residential, Fontainebleau</td>
+<td>€9,250 + accom</td>
+<td>Senior managers / digital leads</td>
+<td>Digital transformation model, GenAI strategy, culture change</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>IMD High Performance Leadership</strong></td>
+<td>IMD 🇨🇭</td>
+<td>EN</td>
+<td>6 days</td>
+<td>Residential, Lausanne</td>
+<td>€15,700 + accom</td>
+<td>All senior levels</td>
+<td>YOU are the case study; self-discovery, emotional intelligence, hostage-negotiation principles</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>IMD Orchestrating Winning Performance</strong></td>
+<td>IMD 🇨🇭</td>
+<td>EN</td>
+<td>5 days</td>
+<td>Residential, Lausanne</td>
+<td>€12,500 + accom</td>
+<td>All levels, teams welcome</td>
+<td>Fully customisable; leadership, strategy, AI, geopolitics — 500+ global executives</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>IMD Transition to Business Leadership</strong></td>
+<td>IMD 🇨🇭</td>
+<td>EN</td>
+<td>~2 months · 2×2 wks + virtual</td>
+<td>2 residential blocks, Lausanne</td>
+<td>€34,200 + accom</td>
+<td>Functional → enterprise leader</td>
+<td>Enterprise thinking, stakeholder alignment, leadership presence</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>LBS Senior Executive Programme</strong></td>
+<td>LBS 🇬🇧</td>
+<td>EN</td>
+<td>4 weeks (2+2 modules)</td>
+<td>Residential, London</td>
+<td>€49,000 incl. accom</td>
+<td>Very senior (15–20 yrs avg)</td>
+<td>Leadership, strategy, change &amp; impact; C-suite cohort, executive coaching</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Oxford Strategic Leadership</strong></td>
+<td>Oxford Saïd 🇬🇧</td>
+<td>EN</td>
+<td>6 days + 4 virtual prep sessions</td>
+<td>Blended, Oxford campus</td>
+<td>£12,000 + £1,150 accom</td>
+<td>Director / board / C-suite (10+ yrs)</td>
+<td>Reflective, values-led leadership via Oxford humanities &amp; arts lens</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>Cambridge Advanced Leadership</strong></td>
+<td>Cambridge Judge 🇬🇧</td>
+<td>EN</td>
+<td>3 weeks</td>
+<td>Intensive residential, Cambridge</td>
+<td>~£30,000 incl. accom</td>
+<td>Senior MDs / BU heads (5+ yrs P&amp;L)</td>
+<td>Strategic agility, global uncertainty, ecosystem thinking, personal leadership reset</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Wharton High-Potential Leaders</strong></td>
+<td>Wharton / UPenn 🇺🇸</td>
+<td>EN</td>
+<td>5 days</td>
+<td>Residential, Philadelphia</td>
+<td>$14,500–14,750 incl. accom &amp; meals</td>
+<td>10+ yrs exp, fast-track to senior mgmt</td>
+<td>Leader identity, communication styles, EQ, org culture, network mapping, crisis simulation</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>Wharton The Resilient Leader</strong></td>
+<td>Wharton / UPenn 🇺🇸</td>
+<td>EN</td>
+<td>4 days</td>
+<td>Residential, Philadelphia</td>
+<td>$10,500–10,750 incl. accom &amp; meals</td>
+<td>Mid–senior leaders in uncertainty/change</td>
+<td>Resilience as strategic skill; team &amp; org resilience, decision-making under pressure, Resilience Action Plan</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>INSEAD Leadership Transition</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>3.5 months · 7 days contact</td>
+<td>2 residential modules, Fontainebleau</td>
+<td>€14,400–14,950 + accom</td>
+<td>Senior functional → GM (10+ yrs)</td>
+<td>Transition to strategic leadership; power, networks, change agency</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>INSEAD Lead the Future</strong></td>
+<td>INSEAD 🇫🇷</td>
+<td>EN</td>
+<td>12 months</td>
+<td>Online + 3-day Fontainebleau capstone</td>
+<td>€19,950</td>
+<td>Mid–senior executives</td>
+<td>Strategy, innovation, disruption leadership — 4 core + 3 electives</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Solstrand Programme</strong></td>
+<td>AFF / NHH 🇳🇴</td>
+<td>NO</td>
+<td>14 months · 7 wks contact</td>
+<td>4 residential blocks, Bergen</td>
+<td>€32,000 + accom</td>
+<td>Senior / C-level</td>
+<td>Group psychology, 360° feedback, authority, power &amp; trust</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>BI Executive MBA</strong></td>
+<td>BI Norwegian 🇳🇴</td>
+<td>EN</td>
+<td>18 months part-time</td>
+<td>Modular, Oslo + international</td>
+<td>€53,000</td>
+<td>Mid–senior managers</td>
+<td>Full general management degree: strategy, finance, leadership, digital</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>NHH Executive MBA</strong></td>
+<td>NHH 🇳🇴</td>
+<td>NO</td>
+<td>24 months part-time · 90 ECTS</td>
+<td>Gathering-based, Oslo + Bergen + 2 intl trips</td>
+<td>NOK 545,000 (~€47,000)</td>
+<td>Mid–senior managers (3+ yrs exp)</td>
+<td>Economics, strategy, leadership, sustainability; 2 specialisations: Strategic Mgmt or Seafood Mgmt; case-based, problem-based pedagogy</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>CBS Executive MBA</strong></td>
+<td>Copenhagen Business School 🇩🇰</td>
+<td>EN</td>
+<td>26 months part-time</td>
+<td>Monthly modules, Copenhagen + 3 global cities</td>
+<td>DKK 450,000 (~€60,000)</td>
+<td>Mid–senior managers (3+ yrs mgmt)</td>
+<td>General management, strategy, sustainability, digitalisation/AI; Nordic leadership model; 4 concentrations; global modules in Shanghai, Chicago, Mumbai</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>SSE MBA Executive Format</strong></td>
+<td>Stockholm School of Economics 🇸🇪</td>
+<td>EN</td>
+<td>18 months part-time</td>
+<td>Monthly sessions Stockholm + 3 intl trips</td>
+<td>SEK 645,000 (~€56,000) excl. VAT</td>
+<td>Senior professionals (5+ yrs)</td>
+<td>General management; strategy, leadership, sustainability, digital/AI; Stanford CGOE + NUS + GNAM certificates; MBALive® applied projects</td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>Henley EMBA – Global (Nordic)</strong></td>
+<td>Henley Business School 🇫🇮🇩🇰</td>
+<td>EN</td>
+<td>24 months · 50 workshop days</td>
+<td>Helsinki/Copenhagen + UK + immersion trips</td>
+<td>€47,000 + VAT (early bird)</td>
+<td>Experienced managers (10+ yrs)</td>
+<td>3-stage programme: foundations → strategy → leadership; personal development &amp; coaching throughout; immersion: South Africa, USA, Singapore</td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>Aalto Executive MBA</strong></td>
+<td>Aalto University 🇫🇮</td>
+<td>EN</td>
+<td>24 months part-time · 90 ECTS</td>
+<td>Weekend modules, Helsinki + optional intl</td>
+<td>€52,000 + VAT</td>
+<td>Senior leaders (10+ yrs)</td>
+<td>Strategy, leadership, finance, marketing; electives; optional specialisations in Finance, Entrepreneurship, Global Business (ESADE/KEDGE)</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>Aalto MBA</strong></td>
+<td>Aalto University 🇫🇮</td>
+<td>EN</td>
+<td>24 months part-time · 90 ECTS</td>
+<td>Evenings + weekends, Helsinki + optional intl</td>
+<td>€37,800 + VAT</td>
+<td>Professionals (3+ yrs)</td>
+<td>Same general management foundation as Aalto EMBA; more accessible entry point; strategy, leadership, finance, marketing; electives</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="upcoming-key-dates-norway-switzerland-france-uk">Upcoming Key Dates (Norway, Switzerland, France &amp; UK)</h3>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Programme</th>
+<th>Location</th>
+<th>Next Dates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>INSEAD Collaborative Leadership</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>22–26 Jun 2026 · 21–25 Jun 2027</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INSEAD High Impact Leadership</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>7–11 Sep 2026 · 1–5 Feb 2027</td>
+</tr>
+<tr>
+<td>3</td>
+<td>INSEAD Leading Teams</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>11–15 May 2026</td>
+</tr>
+<tr>
+<td>4</td>
+<td>INSEAD Leading Successful Change</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>29 Jun–2 Jul 2026 · 6–9 Jul 2027</td>
+</tr>
+<tr>
+<td>5</td>
+<td>INSEAD Leading Change: Digital</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>11–14 May 2026 · 25–28 Aug 2026</td>
+</tr>
+<tr>
+<td>6</td>
+<td>IMD High Performance Leadership</td>
+<td>Lausanne 🇨🇭</td>
+<td>8–13 Mar · 19–24 Apr · 7–12 Jun · 6–11 Sep · 4–9 Oct · 1–6 Nov · 6–11 Dec 2026</td>
+</tr>
+<tr>
+<td>7</td>
+<td>IMD Orchestrating Winning Performance</td>
+<td>Lausanne 🇨🇭</td>
+<td>22–26 Jun 2026</td>
+</tr>
+<tr>
+<td>8</td>
+<td>IMD Transition to Business Leadership</td>
+<td>Lausanne 🇨🇭</td>
+<td>20 Apr–19 Jun 2026 · 17 Aug–6 Nov 2026 · 28 Sep–27 Nov 2026</td>
+</tr>
+<tr>
+<td>9</td>
+<td>LBS Senior Executive Programme</td>
+<td>London 🇬🇧</td>
+<td>M1: 2–13 Mar / M2: 13–24 Apr 2026 · M1: 11 May / M2: 6 Jul 2026</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Oxford Strategic Leadership</td>
+<td>Oxford 🇬🇧</td>
+<td>Virtual prep: Mar 2026 · Residential: from 29 Jun 2026</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Cambridge Advanced Leadership</td>
+<td>Cambridge 🇬🇧</td>
+<td>Contact school for 2026 cohort dates</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Wharton High-Potential Leaders</td>
+<td>Philadelphia 🇺🇸</td>
+<td>20–24 Apr 2026 · 16–20 Nov 2026</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Wharton The Resilient Leader</td>
+<td>Philadelphia 🇺🇸</td>
+<td>8–11 Jun 2026 · 10–13 Nov 2026</td>
+</tr>
+<tr>
+<td>14</td>
+<td>INSEAD Leadership Transition</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>M1: 9–13 Feb 2026 / M2: 18–20 May 2026 · M1: 8–12 Feb 2027 / M2: 17–19 May 2027</td>
+</tr>
+<tr>
+<td>15</td>
+<td>INSEAD Lead the Future</td>
+<td>Fontainebleau 🇫🇷</td>
+<td>Programme Apr 2026–Mar 2027 · Capstone Mar 2027</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Solstrand Programme</td>
+<td>Bergen 🇳🇴</td>
+<td>13–24 Apr 2026 · 7–18 Sep 2026 · 11–22 Jan 2027 · 31 May–4 Jun 2027</td>
+</tr>
+<tr>
+<td>17</td>
+<td>BI Executive MBA</td>
+<td>Oslo 🇳🇴</td>
+<td>4–9 May 2026 · 7–12 Sep 2026 · 1–5 Jun 2026 (elective)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NHH Executive MBA</td>
+<td>Oslo / Bergen 🇳🇴</td>
+<td>Strategic Mgmt: Jan 2026 start (rolling admission) · Seafood Mgmt: Jan 2027 start</td>
+</tr>
+<tr>
+<td>19</td>
+<td>CBS Executive MBA</td>
+<td>Copenhagen 🇩🇰</td>
+<td>Starts Sep 2026 · Monthly Wed–Sat modules · Global: Shanghai, Chicago (Kellogg), Mumbai · Graduation Nov 2028</td>
+</tr>
+<tr>
+<td>20</td>
+<td>SSE MBA Executive Format</td>
+<td>Stockholm 🇸🇪</td>
+<td>Starts Dec 2026 · Intake rounds: Apr · May · Jun · Aug · Sep · Oct 2026 · Trips: Riga, Singapore, Silicon Valley</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Henley EMBA – Global (Nordic)</td>
+<td>Helsinki / Copenhagen 🇫🇮🇩🇰</td>
+<td>Early bird deadline 15 Mar 2026 · Contact school for next intake dates</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Aalto Executive MBA</td>
+<td>Helsinki 🇫🇮</td>
+<td>Oct 2026 – Nov 2028 · Application deadline 29 Aug 2026</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Aalto MBA</td>
+<td>Helsinki 🇫🇮</td>
+<td>Jan 2027 – Dec 2028 · Application deadline 16 Nov 2026</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> Prices converted to EUR for comparability. All fees exclude accommodation unless stated. INSEAD HILP (#2) and Leading Successful Change (#4) also run in Singapore and Abu Dhabi; IMD OWP (#7) also runs in Singapore in Nov — only European dates shown here. Wharton programmes (#12, #13) are in Philadelphia, USA; fees include accommodation and meals.</p>
+</blockquote>
+<hr />
+<h2 id="1-insead-collaborative-leadership">1. INSEAD Collaborative Leadership</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/collaborative-leadership<br />
+<strong>Programme Director:</strong> Michael Y. Lee, Assistant Professor of Organisational Behaviour</p>
+<h3 id="overview">Overview</h3>
+<p>Explores the shift from top-down hierarchical management to decentralised, empowering leadership models (holacracy, agile, self-management). Combines conceptual frameworks with one-to-one coaching and a personal action plan.</p>
+<h3 id="target-participant">Target Participant</h3>
+<p>Organisational leaders and experienced managers across all industries managing teams or business units. Also suitable for HR professionals and internal organisational design consultants.</p>
+<h3 id="core-topics">Core Topics</h3>
+<ul>
+<li>Functions and dysfunctions of traditional hierarchies</li>
+<li>Decentralised organising models (holacracy, agile, self-management)</li>
+<li>Collaborative leadership in practice: architecture, adult-to-adult communication, meeting facilitation</li>
+<li>Psychological safety</li>
+<li>Empowered and agile decision-making</li>
+<li>Personal collaborative leadership action plan</li>
+</ul>
+<h3 id="all-scheduled-dates-fees">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026</td>
+<td>22–26 June 2026</td>
+<td>Fontainebleau</td>
+<td>€11,200</td>
+</tr>
+<tr>
+<td>2027</td>
+<td>21–25 June 2027</td>
+<td>Fontainebleau</td>
+<td>€11,600</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-insead-high-impact-leadership-programme-hilp">2. INSEAD High Impact Leadership Programme (HILP)</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/high-impact-leadership-programme<br />
+<strong>Programme Director:</strong> Martin Gargiulo, Professor of Organisational Behaviour</p>
+<h3 id="overview_1">Overview</h3>
+<p>A five-day programme bridging macro (organisational structure, networks, culture) and micro (performance management, feedback, personal style) leadership topics, unified through the proprietary &ldquo;X-teams&rdquo; concept. Uses INSEAD assessment tools, simulations, group exercises, and video-recorded feedback sessions. Post-programme follow-up with coaches included.</p>
+<h3 id="target-participant_1">Target Participant</h3>
+<p>Managers with 3–6 years leadership experience, including MBA graduates and technical specialists who have recently moved into management.</p>
+<h3 id="core-topics_1">Core Topics</h3>
+<ul>
+<li>Organisational structures, incentives, and culture</li>
+<li>X-teams: designing effective internal processes and external networks</li>
+<li>Diagnosing performance problems, feedback, and coaching</li>
+<li>Identifying and empowering talent</li>
+<li>Personal action plan (with post-programme coaching follow-up)</li>
+<li>Breaking down personal barriers to behaviour change</li>
+</ul>
+<h3 id="all-scheduled-dates-fees_1">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apr 2026</td>
+<td>20–24 April 2026</td>
+<td>Singapore</td>
+<td>SG$16,200</td>
+</tr>
+<tr>
+<td>May 2026</td>
+<td>17–21 May 2026</td>
+<td>Abu Dhabi</td>
+<td>€11,400</td>
+</tr>
+<tr>
+<td>Sep 2026</td>
+<td>7–11 September 2026</td>
+<td>Fontainebleau</td>
+<td>€11,600</td>
+</tr>
+<tr>
+<td>Nov 2026 (1)</td>
+<td>1–5 November 2026</td>
+<td>Abu Dhabi</td>
+<td>€11,600</td>
+</tr>
+<tr>
+<td>Nov 2026 (2)</td>
+<td>16–20 November 2026</td>
+<td>Singapore</td>
+<td>SG$16,600</td>
+</tr>
+<tr>
+<td>Feb 2027</td>
+<td>1–5 February 2027</td>
+<td>Fontainebleau</td>
+<td>€11,600</td>
+</tr>
+<tr>
+<td>May 2027 (1)</td>
+<td>3–7 May 2027</td>
+<td>Singapore</td>
+<td>SG$16,600</td>
+</tr>
+<tr>
+<td>May 2027 (2)</td>
+<td>16–20 May 2027</td>
+<td>Abu Dhabi</td>
+<td>€11,600</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Opening dinner required the evening before Day 1. Closing dinner on the final evening (plan departure for the following day).</em></p>
+<hr />
+<h2 id="3-insead-leading-teams">3. INSEAD Leading Teams</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/leading-teams<br />
+<strong>Programme Directors:</strong> Roderick Swaab (INSEAD Chaired Professor of Leadership &amp; Conflict Resolution) and Stefan Thau (Cora Chaired Professor of Leadership &amp; Learning)</p>
+<h3 id="overview_2">Overview</h3>
+<p>A five-day deep dive into team leadership — from motivation and performance management to conflict resolution, decision-making biases, and cross-team negotiation. Uses real-world case studies, computer simulations, role-plays, and coaching. Suitable for a very wide seniority range.</p>
+<h3 id="target-participant_2">Target Participant</h3>
+<p>Participants from all functions and industries with at least 1–2 years managerial experience. Open to functional managers through C-level executives.</p>
+<h3 id="core-topics_2">Core Topics</h3>
+<ul>
+<li>Team motivation and performance feedback</li>
+<li>Leading high-performing and global virtual teams</li>
+<li>Leveraging expertise diversity within teams</li>
+<li>Biases in team decision-making and how to counter them</li>
+<li>Cross-team negotiation and value creation</li>
+<li>Conflict resolution techniques</li>
+<li>Persuasion, influence, and power dynamics</li>
+<li>Using teams to drive and sustain organisational change</li>
+</ul>
+<h3 id="all-scheduled-dates-fees_2">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May 2026</td>
+<td>11–15 May 2026</td>
+<td>Fontainebleau</td>
+<td>€11,200</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Arrive the evening before as programme starts early on Day 1.</em></p>
+<hr />
+<h2 id="4-insead-leading-successful-change">4. INSEAD Leading Successful Change</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/leading-successful-change<br />
+<strong>Programme Director:</strong> Vibha Gaba, Professor of Entrepreneurship (Berghmans Lhoist Chaired Professor of Entrepreneurial Leadership)</p>
+<h3 id="overview_3">Overview</h3>
+<p>An intensive four-day programme focused entirely on change leadership. Participants must bring a real or near-future change initiative to work on throughout the programme. Features the proprietary <strong>Change Pro Simulation</strong> — a risk-free environment compressing a 120-day change initiative into a few hours. Includes group coaching and an individual action plan. Small teams from the same organisation (up to 3) are welcome and encouraged.</p>
+<h3 id="target-participant_3">Target Participant</h3>
+<p>Executives in middle to upper-middle management (8+ years experience) responsible for teams, divisions, or strategic change initiatives.</p>
+<h3 id="core-topics_3">Core Topics</h3>
+<ul>
+<li>Diagnosing personal change leadership strengths and weaknesses</li>
+<li>Helping others see the need for change (inciting motivation)</li>
+<li>Dynamics of resistance: understanding, anticipating, and managing resisters</li>
+<li>Stakeholder mapping and management</li>
+<li>Building networks and coalitions to sustain change</li>
+<li>Non-linear dynamics of change over time</li>
+<li>Change Pro Simulation (proprietary tool)</li>
+<li>Individual action plan with coaching support</li>
+</ul>
+<h3 id="all-scheduled-dates-fees_3">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jun–Jul 2026</td>
+<td>29 June – 2 July 2026</td>
+<td>Fontainebleau</td>
+<td>€9,450</td>
+</tr>
+<tr>
+<td>Sep–Oct 2026</td>
+<td>28 September – 1 October 2026</td>
+<td>Singapore</td>
+<td>SG$13,950</td>
+</tr>
+<tr>
+<td>Jul 2027</td>
+<td>6–9 July 2027</td>
+<td>Fontainebleau</td>
+<td>€9,800</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Arrive the evening before as programme starts early on Day 1. Participants must outline their change initiative in their application.</em></p>
+<hr />
+<h2 id="5-insead-leading-change-in-an-age-of-digital-transformation">5. INSEAD Leading Change in an Age of Digital Transformation</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/leading-change-age-digital-transformation<br />
+<strong>Programme Director:</strong> Chengyi Lin, Affiliate Professor of Strategy</p>
+<h3 id="overview_4">Overview</h3>
+<p>A four-day immersive programme addressing why most digital transformations fail (&gt;80% fall short) and what leaders can do about it. Focuses on the human, cultural, and organisational dimensions of digital transformation rather than the technology itself. Structured around a 4-Phase × 3-Level change framework. Participants bring a current or near-future digital transformation project to apply in real time.</p>
+<h3 id="target-participant_4">Target Participant</h3>
+<p>Senior executives and managers across industries who are driving digital initiatives (including GenAI adoption) or leading teams through digital change. Teams of up to 3 managers from the same organisation are especially encouraged.</p>
+<h3 id="core-topics_4">Core Topics</h3>
+<p><strong>Leading Twin Transformations:</strong>
+- Digital Transformation strategy and GenAI frameworks
+- Sustainable Transition (EV, green energy, new business models)</p>
+<p><strong>The 4 Stages of Change:</strong>
+- Phase 0: Incubation &amp; Exploration
+- Phase 1: Innovation &amp; Motivation (ignition pitfalls, emotional connection)
+- Phase 2: Launch &amp; Scaling (early adopters, managing the majority middle)
+- Phase 3: Sustaining Success &amp; Integration (re-energising post-launch)</p>
+<p><strong>The 3 Levels of Change:</strong> Business · Organisation · Individual</p>
+<h3 id="all-scheduled-dates-fees_4">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May 2026</td>
+<td>11–14 May 2026</td>
+<td>Fontainebleau</td>
+<td>€9,250</td>
+</tr>
+<tr>
+<td>Aug 2026</td>
+<td>25–28 August 2026</td>
+<td>Fontainebleau</td>
+<td>€9,250</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Arrive the evening before as programme starts early on Day 1. Participants should outline their digital transformation project in their application.</em></p>
+<hr />
+<h2 id="comparative-analysis">Comparative Analysis</h2>
+<h3 id="by-price-ascending">By Price (ascending)</h3>
+<table>
+<thead>
+<tr>
+<th>Programme</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INSEAD Leading Change in Digital Transformation</td>
+<td>€9,250 (4 days)</td>
+</tr>
+<tr>
+<td>INSEAD Leading Successful Change</td>
+<td>€9,450–€9,800 (4 days)</td>
+</tr>
+<tr>
+<td>INSEAD Leading Teams</td>
+<td>€11,200 (5 days)</td>
+</tr>
+<tr>
+<td>INSEAD Collaborative Leadership</td>
+<td>€11,200–€11,600 (5 days)</td>
+</tr>
+<tr>
+<td>INSEAD High Impact Leadership Programme</td>
+<td>€11,400–€11,600 (5 days)</td>
+</tr>
+<tr>
+<td>INSEAD The Leadership Transition</td>
+<td>€14,400–€14,950 (7 days)</td>
+</tr>
+<tr>
+<td>INSEAD Lead the Future</td>
+<td>€19,950 (12 months online)</td>
+</tr>
+<tr>
+<td>Solstrand Programme</td>
+<td>NOK 370,000 / ~€32,000 (14 months)</td>
+</tr>
+<tr>
+<td>BI Executive MBA</td>
+<td>NOK 615,000 / ~€53,000 (18 months)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="by-depth-duration">By Depth &amp; Duration</h3>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Programmes</th>
+<th>Characteristics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transformational (long-arc)</strong></td>
+<td>Solstrand, BI EMBA, INSEAD Lead the Future</td>
+<td>Multi-month, deep change in identity/capability</td>
+</tr>
+<tr>
+<td><strong>Transition programmes</strong></td>
+<td>INSEAD Leadership Transition</td>
+<td>Multi-module, personal + career shift focus</td>
+</tr>
+<tr>
+<td><strong>Intensive specialist</strong></td>
+<td>Collaborative Leadership, HILP, Leading Teams, Leading Change, Digital Change</td>
+<td>4–5 days, specific skill or theme</td>
+</tr>
+</tbody>
+</table>
+<h3 id="by-primary-focus-area">By Primary Focus Area</h3>
+<table>
+<thead>
+<tr>
+<th>Focus</th>
+<th>Programme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Personal psychology &amp; inner leadership</td>
+<td>Solstrand, The Leadership Transition</td>
+</tr>
+<tr>
+<td>General management &amp; strategy</td>
+<td>BI EMBA, Lead the Future</td>
+</tr>
+<tr>
+<td>Team leadership</td>
+<td>Leading Teams, High Impact Leadership</td>
+</tr>
+<tr>
+<td>Organisational design &amp; collaboration</td>
+<td>Collaborative Leadership</td>
+</tr>
+<tr>
+<td>Change management</td>
+<td>Leading Successful Change, Leading Change Digital</td>
+</tr>
+<tr>
+<td>Digital &amp; AI transformation</td>
+<td>Leading Change in Digital Transformation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="language-accessibility">Language Accessibility</h3>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Programmes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Norwegian only</td>
+<td>Solstrand Programme</td>
+</tr>
+<tr>
+<td>English (all others)</td>
+<td>BI EMBA, all INSEAD programmes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="location-summary">Location Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Programmes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Norway (Bergen area)</td>
+<td>Solstrand</td>
+</tr>
+<tr>
+<td>Norway (Oslo)</td>
+<td>BI EMBA (primary campus)</td>
+</tr>
+<tr>
+<td>France (Fontainebleau)</td>
+<td>All INSEAD residential programmes</td>
+</tr>
+<tr>
+<td>Singapore</td>
+<td>HILP, Leading Successful Change</td>
+</tr>
+<tr>
+<td>Abu Dhabi</td>
+<td>HILP</td>
+</tr>
+<tr>
+<td>International (Berkeley, Madrid, Potsdam)</td>
+<td>BI EMBA electives</td>
+</tr>
+<tr>
+<td>Online</td>
+<td>INSEAD Lead the Future (primarily)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-imd-high-performance-leadership-hpl">6. IMD — High Performance Leadership (HPL)</h2>
+<p><strong>Provider:</strong> IMD Business School<br />
+<strong>Location:</strong> Lausanne, Switzerland<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.imd.org/leadership/hpl/</p>
+<h3 id="overview_5">Overview</h3>
+<p>One of Europe&rsquo;s most acclaimed short leadership programmes, running since 2002. The defining characteristic: YOU are the case study, not a company. Over 6 intensive days, participants explore their unique leadership roots and patterns, emotional intelligence, and the psychology of high performance. Director George Kohlrieser is internationally known for applying hostage negotiation principles to leadership — the idea that leaders must avoid becoming &ldquo;psychological hostages&rdquo; to fear, pressure, or other people&rsquo;s agendas.</p>
+<h3 id="target-participant_5">Target Participant</h3>
+<p>Open to all levels — from functional managers to C-suite. Particularly valued by executives who have done broad general management programmes and want something deeper and more personal.</p>
+<h3 id="core-topics_5">Core Topics</h3>
+<ul>
+<li>Leadership self-discovery: roots, patterns, strengths and blind spots</li>
+<li>Emotional intelligence and authentic connection with teams</li>
+<li>Focus and mental performance techniques used by world-class athletes and artists</li>
+<li>Principles of hostage negotiation applied to leadership</li>
+<li>Creating psychological safety and trust</li>
+<li>Post-programme coaching (included)</li>
+</ul>
+<h3 id="dates-fees">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8–13 Mar 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900 (~€15,700)</td>
+</tr>
+<tr>
+<td>19–24 Apr 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>7–12 Jun 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>6–11 Sep 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>4–9 Oct 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>1–6 Nov 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>6–11 Dec 2026</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+<tr>
+<td>14–19 Feb 2027</td>
+<td>Lausanne</td>
+<td>CHF 14,900</td>
+</tr>
+</tbody>
+</table>
+<p><em>Fee excludes accommodation. Tuition and teaching materials included.</em></p>
+<hr />
+<h2 id="7-imd-orchestrating-winning-performance-owp">7. IMD — Orchestrating Winning Performance (OWP)</h2>
+<p><strong>Provider:</strong> IMD Business School<br />
+<strong>Location:</strong> Lausanne, Switzerland (also Singapore)<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.imd.org/owp/</p>
+<h3 id="overview_6">Overview</h3>
+<p>IMD&rsquo;s signature programme and one of the most well-known executive education experiences in the world. Now in its 30th+ year. Unlike most programmes, OWP is fully customisable — participants build their own week from a menu of sessions organised around five themes: Leadership, Strategy &amp; Management, Digital &amp; AI Transformation, Sustainability, and Geopolitics &amp; Society. 500+ executives, 60+ nationalities, 5 intense days. Particularly valuable for sending teams together (every 5th participant attends free).</p>
+<h3 id="target-participant_6">Target Participant</h3>
+<p>Business leaders, senior managers, and entrepreneurs at all career stages. Ideal for teams seeking shared language and collective energy.</p>
+<h3 id="core-topics-participants-choice">Core Topics (participant&rsquo;s choice)</h3>
+<ul>
+<li>Leadership in fragmented and competitive markets</li>
+<li>AI strategy and digital transformation</li>
+<li>Geopolitics and global risk</li>
+<li>Organisational culture and performance</li>
+<li>Sustainability and ESG</li>
+<li>Keynote speakers from business, science, and government</li>
+</ul>
+<h3 id="dates-fees_1">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22–26 Jun 2026</td>
+<td>Lausanne</td>
+<td>CHF 11,900 (~€12,500)</td>
+</tr>
+<tr>
+<td>Nov 2026 (TBC)</td>
+<td>Singapore</td>
+<td>SGD pricing</td>
+</tr>
+</tbody>
+</table>
+<p><em>Early bird offer ended 28 Feb 2026 for Lausanne. Team offer: every 5th participant free.</em></p>
+<hr />
+<h2 id="8-imd-transition-to-business-leadership-tbl">8. IMD — Transition to Business Leadership (TBL)</h2>
+<p><strong>Provider:</strong> IMD Business School<br />
+<strong>Location:</strong> Lausanne, Switzerland<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.imd.org/management/tbl/</p>
+<h3 id="overview_7">Overview</h3>
+<p>A major step-change programme for executives moving from leading a function to leading an enterprise. Combines 2 × 2-week residential blocks in Lausanne with 3 virtual modules in between. Part of IMD&rsquo;s Program for Executive Development (PED) certificate pathway, which can also be combined with the Foundations for Business Leadership module.</p>
+<h3 id="target-participant_7">Target Participant</h3>
+<p>Ambitious executives at a critical transition — typically moving from functional director / VP to GM, COO, or business unit leader level. Not for first-time managers.</p>
+<h3 id="core-topics_6">Core Topics</h3>
+<ul>
+<li>Enterprise-level strategic thinking and business model innovation</li>
+<li>Financial performance management and value creation</li>
+<li>Leading across functions: influencing without authority</li>
+<li>Stakeholder management and leadership presence at the executive table</li>
+<li>Organisational culture and transformation</li>
+<li>Personal leadership development with coaching</li>
+</ul>
+<h3 id="dates-fees_2">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20 Apr – 19 Jun 2026</td>
+<td>Lausanne</td>
+<td>CHF 32,500 (~€34,200)</td>
+</tr>
+<tr>
+<td>17 Aug – 6 Nov 2026</td>
+<td>Lausanne</td>
+<td>CHF 32,500</td>
+</tr>
+<tr>
+<td>28 Sep – 27 Nov 2026</td>
+<td>Lausanne</td>
+<td>CHF 32,500</td>
+</tr>
+</tbody>
+</table>
+<p><em>Tuition, teaching materials, and lunch included. Accommodation not included.</em></p>
+<hr />
+<h2 id="9-london-business-school-senior-executive-programme-sep">9. London Business School — Senior Executive Programme (SEP)</h2>
+<p><strong>Provider:</strong> London Business School<br />
+<strong>Location:</strong> London, UK<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.london.edu/executive-education/general-management/senior-executive-programme</p>
+<h3 id="overview_8">Overview</h3>
+<p>LBS&rsquo;s flagship programme for the most senior tier of executives. Consistently one of the most prestigious open-enrolment executive programmes in the world. 4 weeks total (two 2-week modules) in London, with hotel accommodation included in the fee. Selective admission — written application + panel interview required. Cohort is deliberately international and senior, averaging 15–20 years of management experience.</p>
+<h3 id="target-participant_8">Target Participant</h3>
+<p>C-suite executives, senior VPs, board members, and those stepping into top leadership roles. Application required; acceptance not automatic.</p>
+<h3 id="core-topics_7">Core Topics</h3>
+<ul>
+<li>Leadership style, impact, and effectiveness (psychometric tools + executive coaching)</li>
+<li>Strategy and competitive advantage in volatile environments</li>
+<li>Change, transformation, and organisational resilience</li>
+<li>Driving performance through people</li>
+<li>Innovation and sustainability for long-term growth</li>
+<li>London as a living classroom: business visits, guest leaders, ecosystem access</li>
+</ul>
+<h3 id="dates-fees_3">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Dates</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cohort A — M1</td>
+<td>2–13 Mar 2026</td>
+<td>London</td>
+</tr>
+<tr>
+<td>Cohort A — M2</td>
+<td>13–24 Apr 2026</td>
+<td>London</td>
+</tr>
+<tr>
+<td>Cohort B — M1</td>
+<td>11–22 May 2026</td>
+<td>London</td>
+</tr>
+<tr>
+<td>Cohort B — M2</td>
+<td>6–17 Jul 2026</td>
+<td>London</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fee:</strong> £41,500 (~€49,000) — includes hotel accommodation, all meals, course materials, excursions, and gym access. Applications open May 2026 for next cycle.</p>
+<p><strong>Contact:</strong> sep@london.edu · +44 (0)20 7000 7391</p>
+<hr />
+<h2 id="10-oxford-saïd-business-school-strategic-leadership-programme">10. Oxford Saïd Business School — Strategic Leadership Programme</h2>
+<p><strong>Provider:</strong> University of Oxford, Saïd Business School<br />
+<strong>Location:</strong> Oxford, UK<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.sbs.ox.ac.uk/programmes/executive-education/person-programmes/oxford-strategic-leadership-programme</p>
+<h3 id="overview_9">Overview</h3>
+<p>Oxford&rsquo;s most personal and experiential short leadership programme, ranked 6th in the world for open executive education (FT 2025). Designed for leaders who have already completed conventional leadership training and are looking for something more reflective, creative, and values-driven. Oxford&rsquo;s interdisciplinary breadth — humanities, arts, sciences — is used as a lens through which to re-examine leadership assumptions. Small-group tutorials and guided reflection are central to the experience.</p>
+<h3 id="target-participant_9">Target Participant</h3>
+<p>Executives with 10+ years of senior strategic leadership experience, particularly at director, board, or C-suite level. Private, public, and non-profit sectors welcome. Ideally leaders navigating real complexity or seeking a values-led reset.</p>
+<h3 id="core-topics_8">Core Topics</h3>
+<ul>
+<li>Leadership purpose, values, and impact in a complex world</li>
+<li>Letting go of traditional and outdated leadership practices</li>
+<li>Creative, strategic, empathetic, and relational forms of leadership</li>
+<li>Navigating ambiguity and uncertainty with curiosity</li>
+<li>Small-group Oxford-style tutorials with leading faculty</li>
+<li>Connection with Oxford&rsquo;s research base across disciplines</li>
+</ul>
+<h3 id="dates-fees_4">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Dates</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4 virtual preparation sessions</td>
+<td>March 2026</td>
+<td>Online</td>
+</tr>
+<tr>
+<td>4.5-day residential</td>
+<td>From 29 Jun 2026</td>
+<td>Oxford campus</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fee:</strong> £12,000 + £1,150 accommodation<br />
+<em>FT Executive Education rankings: 6th in the world, 2nd in the UK (2025)</em></p>
+<hr />
+<hr />
+<h2 id="11-cambridge-judge-business-school-advanced-leadership-programme-alp">11. Cambridge Judge Business School — Advanced Leadership Programme (ALP)</h2>
+<p><strong>Provider:</strong> University of Cambridge, Judge Business School<br />
+<strong>Location:</strong> Cambridge, UK<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.jbs.cam.ac.uk/executive-education/leadership/cambridge-advanced-leadership-programme/</p>
+<h3 id="overview_10">Overview</h3>
+<p>Cambridge&rsquo;s flagship leadership programme for seasoned senior executives. 3 intensive weeks in Cambridge, deliberately designed as a step back from operational life to reassess, challenge assumptions, and develop a renewed personal leadership agenda. Cohort size is deliberately small for maximum depth of interaction. Participants become Associate Alumni of Cambridge Judge Business School. The Cambridge collegiate environment — colleges, science parks, incubators — is an integral part of the experience.</p>
+<h3 id="target-participant_10">Target Participant</h3>
+<p>Managing directors or heads of business units with at least 5 years in the role and P&amp;L responsibility. Public and private sector. Not for early-career leaders.</p>
+<h3 id="core-topics_9">Core Topics</h3>
+<ul>
+<li>Navigating global financial crises, cyber threats, trade wars, and geopolitical risk</li>
+<li>Strategic agility: adapting to rapid economic and technological change</li>
+<li>Ecosystem thinking: building networks of partners, leading in matrix structures</li>
+<li>Personal leadership style: self-examination and renewal</li>
+<li>Innovation and digital transformation in established organisations</li>
+<li>Small cohort, high faculty-to-participant ratio</li>
+</ul>
+<h3 id="dates-fees_5">Dates &amp; Fees</h3>
+<p>Contact Cambridge Judge directly for 2026 cohort dates — typically runs 2–3 times per year.</p>
+<p><strong>Fee:</strong> ~£28,000–32,000 including accommodation in Cambridge<br />
+<strong>Contact:</strong> execed@jbs.cam.ac.uk · jbs.cam.ac.uk/executive-education</p>
+<hr />
+<h2 id="12-wharton-high-potential-leaders-accelerating-your-impact">12. Wharton — High-Potential Leaders: Accelerating Your Impact</h2>
+<p><strong>Provider:</strong> Wharton Executive Education, University of Pennsylvania<br />
+<strong>Location:</strong> Steinberg Conference Center, Philadelphia, PA, USA<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/high-potential-leaders-accelerating-your-impact/</p>
+<h3 id="overview_11">Overview</h3>
+<p>A highly personalised 5-day residential programme built around the individual leader — not generic frameworks. Participants move through a progression from self-awareness → team leadership → organisational culture. Uses psychometric assessments (Wharton Personality Profile, Communications Style Questionnaire, Network Mapping) and an interactive simulation designed by Wharton Interactive (game-based learning, similar to a flight simulator for leaders) to test crisis management, teamwork, and decision-making in realistic high-stakes scenarios.</p>
+<h3 id="target-participant_11">Target Participant</h3>
+<p>Professionals with at least 10 years of experience on a fast-track career trajectory, with an ultimate goal of reaching senior management.</p>
+<h3 id="core-topics_10">Core Topics</h3>
+<ul>
+<li>Leader identity and personal leadership style</li>
+<li>Communication styles and emotional intelligence</li>
+<li>Building and leveraging your network</li>
+<li>Power and persuasion</li>
+<li>Leading organisational culture</li>
+<li>Leading change</li>
+<li>Crisis management and team collaboration simulation (Wharton Interactive)</li>
+<li>Individual action plan: immediate and long-term commitments</li>
+</ul>
+<h3 id="dates-fees_6">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20–24 Apr 2026</td>
+<td>Philadelphia, PA</td>
+<td>$14,500 incl. accom &amp; meals</td>
+</tr>
+<tr>
+<td>16–20 Nov 2026</td>
+<td>Philadelphia, PA</td>
+<td>$14,750 incl. accom &amp; meals</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Academic Director:</strong> Nancy Rothbard, PhD — Deputy Dean &amp; David Pottruck Professor of Management<br />
+<strong>Contact:</strong> execed@wharton.upenn.edu · +1.215.898.1776</p>
+<hr />
+<h2 id="13-wharton-the-resilient-leader">13. Wharton — The Resilient Leader</h2>
+<p><strong>Provider:</strong> Wharton Executive Education, University of Pennsylvania<br />
+<strong>Location:</strong> Steinberg Conference Center, Philadelphia, PA, USA<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/the-resilient-leader/</p>
+<h3 id="overview_12">Overview</h3>
+<p>A brand-new programme (launched 2026) treating resilience not as a personal coping trait but as a strategic, learnable leadership capability that can be embedded across individuals, teams, and organisations. Designed for leaders operating in permanent uncertainty — geopolitical instability, rapid AI-driven change, workforce stress. Includes a notable fireside chat with Angela Duckworth (author of <em>Grit</em>) on perseverance vs. resilience, plus a mural tour of Philadelphia with the founder of Mural Arts Philadelphia connecting leadership, creativity, and community under constraint. Participants leave with a personalised Resilience Action Plan.</p>
+<h3 id="target-participant_12">Target Participant</h3>
+<p>Mid- to senior-level leaders responsible for guiding teams through complexity, change, or sustained volatility. Includes corporate, healthcare, government, and non-profit executives. Also well-suited to leaders transitioning into expanded or ambiguous roles.</p>
+<h3 id="core-topics_11">Core Topics</h3>
+<ul>
+<li>Resilience as a proactive strategic capability (not reactive coping)</li>
+<li>Individual resilience: self-awareness, emotional regulation, recovery</li>
+<li>Team resilience: helping teams adapt and perform under sustained pressure</li>
+<li>Organisational resilience: embedding adaptive capacity into systems and culture</li>
+<li>Decision-making under uncertainty and constraint</li>
+<li>Simulations and structured reflection exercises</li>
+<li>Fireside chat: Angela Duckworth on grit and perseverance</li>
+<li>Resilience Action Plan + resilient-leadership narrative</li>
+</ul>
+<h3 id="dates-fees_7">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Dates</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8–11 Jun 2026</td>
+<td>Philadelphia, PA</td>
+<td>$10,500 incl. accom &amp; meals</td>
+</tr>
+<tr>
+<td>10–13 Nov 2026</td>
+<td>Philadelphia, PA</td>
+<td>$10,750 incl. accom &amp; meals</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Academic Director:</strong> Samir Nurmohamed, PhD — Associate Professor of Management<br />
+<strong>Contact:</strong> execed@wharton.upenn.edu · +1.215.898.1776</p>
+<hr />
+<h2 id="14-insead-the-leadership-transition">14. INSEAD The Leadership Transition</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/leadership/leadership-transition<br />
+<strong>Programme Director:</strong> Jennifer Petriglieri, Associate Professor of Organisational Behaviour</p>
+<h3 id="overview_13">Overview</h3>
+<p>Designed for mid-career professionals moving from functional/operational roles into strategic leadership. Two modules: a 5-day residential core week plus a 2-day follow-up ~3 months later. Includes 360-degree assessment, role plays, peer coaching, and a personal action plan. Up to 20 nationalities per cohort.</p>
+<h3 id="target-participant_13">Target Participant</h3>
+<p>Upper-middle to senior professionals preparing for enhanced leadership responsibilities. Minimum 10 years professional experience, including 6 years people management.</p>
+<h3 id="core-topics_12">Core Topics</h3>
+<ul>
+<li>What leaders really do (identity, style, personalisation)</li>
+<li>Influencing and coalition-building</li>
+<li>Understanding team dynamics and hidden forces</li>
+<li>Building and leveraging networks</li>
+<li>Feedback and coaching for change</li>
+<li>Leading in the future of work (inclusivity, resilience, cross-border culture)</li>
+</ul>
+<h3 id="all-scheduled-dates-fees_5">All Scheduled Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Module 1</th>
+<th>Module 2</th>
+<th>Location</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026 Spring</td>
+<td>9–13 February 2026</td>
+<td>18–20 May 2026</td>
+<td>Fontainebleau</td>
+<td>€14,400</td>
+</tr>
+<tr>
+<td>2026 Autumn</td>
+<td>5–9 October 2026</td>
+<td>18–20 January 2027</td>
+<td>Fontainebleau</td>
+<td>€14,950</td>
+</tr>
+<tr>
+<td>2027 Spring</td>
+<td>8–12 February 2027</td>
+<td>17–19 May 2027</td>
+<td>Fontainebleau</td>
+<td>€14,950</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: Module 2 spans 3 calendar days but delivers 2 days of content (starts afternoon Day 1, ends 12:00 Day 3). Modules are not interchangeable between sessions.</em></p>
+<hr />
+<h2 id="15-insead-lead-the-future">15. INSEAD Lead the Future</h2>
+<p><strong>Provider:</strong> INSEAD Executive Education<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.insead.edu/executive-education/open-online-programmes/lead-future<br />
+<strong>Format:</strong> Online flagship programme + 3-day in-person capstone</p>
+<h3 id="overview_14">Overview</h3>
+<p>INSEAD&rsquo;s 12-month flagship online leadership programme. Primarily asynchronous with live virtual touchpoints, concluding in a 3-day capstone workshop at Fontainebleau. Four compulsory core modules plus three electives chosen from 12 options. Participants gain INSEAD Alumni status (3 years) upon completion.</p>
+<h3 id="target-participant_14">Target Participant</h3>
+<p>Mid to senior executives and high-potential managers across industries and geographies.</p>
+<h3 id="core-modules">Core Modules</h3>
+<ol>
+<li>Fostering Innovation in an Age of Disruption (5 weeks, online)</li>
+<li>Strategy in Turbulent Times (5 weeks, online)</li>
+<li>Leadership in Disruptive Times (6 weeks, online)</li>
+<li>Mastering Financial Analysis (4 weeks, online)
++ Effective Decision Making for Leaders (synchronous live virtual, 3 half-days)</li>
+</ol>
+<h3 id="elective-streams-choose-3-of-12">Elective Streams (choose 3 of 12)</h3>
+<p><strong>Sensing Value:</strong> Digital Partnerships &amp; Ecosystems · Marketing Strategies in a Digital World · Mastering AI for your Organisation · Mastering Creativity and Design Thinking<br />
+<strong>Delivering Value:</strong> Leadership Excellence and Influence · Communicating with Impact · Leading Diversity and Inclusion · Negotiation Excellence · Emerging Leaders Programme<br />
+<strong>Sustaining Value:</strong> Management Accounting · Building a Circular Economy · Sustainable Finance</p>
+<h3 id="dates-fees_8">Dates &amp; Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Cohort</th>
+<th>Start</th>
+<th>End / Capstone</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026–2027</td>
+<td>9 April 2026</td>
+<td>24 March 2027 (Fontainebleau capstone)</td>
+<td>€19,950</td>
+</tr>
+</tbody>
+</table>
+<p><em>Application deadline: 26 March 2026</em></p>
+<hr />
+<h2 id="16-solstrand-programme">16. Solstrand Programme</h2>
+<p><strong>Provider:</strong> AFF (Administrative Research Institute) / NHH Norwegian School of Economics<br />
+<strong>Language:</strong> Norwegian<br />
+<strong>Website:</strong> https://aff.no/solstrandprogrammene/solstrandprogrammet/</p>
+<h3 id="overview_15">Overview</h3>
+<p>Norway&rsquo;s most prestigious senior leadership programme, running continuously since 1953. Rooted in group psychology and the Tavistock Institute&rsquo;s group relations tradition. The programme works on the personal and psychological dimensions of leadership through intensive group processes, individual consulting, and 360-degree feedback. Designed exclusively for the Norwegian private, public, and non-profit sectors.</p>
+<h3 id="target-participant_15">Target Participant</h3>
+<p>Experienced senior leaders with central roles in Norwegian organisations. Cross-sector cohort of ~48 participants per cohort.</p>
+<h3 id="core-topics_13">Core Topics</h3>
+<ul>
+<li>Deep personal leadership development through group dynamics</li>
+<li>Authority, trust, power, and influence (experiential)</li>
+<li>360-degree feedback with personal AFF consultant</li>
+<li>Cognitive and emotional processes in leadership</li>
+<li>Strategy and adaptive challenges</li>
+<li>Guest lectures from INSEAD, LBS, ETH Zurich, CBS faculty</li>
+<li>Alumni network (lifelong)</li>
+</ul>
+<h3 id="programme-structure-20262027-cohort">Programme Structure (2026–2027 Cohort)</h3>
+<table>
+<thead>
+<tr>
+<th>Session</th>
+<th>Dates</th>
+<th>Theme</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Session 1</td>
+<td>13–24 April 2026</td>
+<td>Dynamic leadership in unpredictable environments</td>
+</tr>
+<tr>
+<td>Session 2</td>
+<td>7–18 September 2026</td>
+<td>Strategy and adaptive challenges</td>
+</tr>
+<tr>
+<td>Session 3</td>
+<td>11–22 January 2027</td>
+<td>The art of leading in complexity</td>
+</tr>
+<tr>
+<td>Session 4</td>
+<td>31 May – 4 June 2027</td>
+<td>The leadership the future needs</td>
+</tr>
+<tr>
+<td>Alumni Gathering</td>
+<td>January 2028</td>
+<td>2-day annual reunion</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fees">Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Fee Type</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td>NOK 370,000 (~€32,000) excl. travel &amp; accommodation</td>
+</tr>
+<tr>
+<td>Early-bird (before 20 Oct)</td>
+<td>NOK 340,000 (~€29,000) excl. travel &amp; accommodation</td>
+</tr>
+<tr>
+<td>Accommodation at Solstrand Hotel (est.)</td>
+<td>~€850/week × 7 weeks ≈ €6,000 additional</td>
+</tr>
+</tbody>
+</table>
+<h3 id="location">Location</h3>
+<p>Solstrand Hotel &amp; Bad, Bjørnefjorden, Os municipality (30 km south of Bergen). Participants stay on-site in single rooms during all sessions.</p>
+<h3 id="admissions">Admissions</h3>
+<p>Rolling admissions via individual interview with Programme Director Gisken Holst (+47 977 37 017 / gisken.holst@aff.no). Free places available for candidates from humanitarian organisations.</p>
+<h3 id="ft-ranking">FT Ranking</h3>
+<p>NHH/AFF ranked <strong>33rd globally</strong> in the Financial Times Executive Education Open Enrolment ranking (highest ever).</p>
+<hr />
+<h2 id="17-bi-norwegian-business-school-executive-mba">17. BI Norwegian Business School — Executive MBA</h2>
+<p><strong>Provider:</strong> BI Norwegian Business School<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> https://www.bi.no/en/programmes-and-individual-courses/master-programmes/executive-mba/</p>
+<h3 id="overview_16">Overview</h3>
+<p>An 18-month part-time EMBA designed for mid- to senior-level managers and executives who want to continue working full-time. Combines Oslo-based core weeks with international modules at partner schools in Berkeley (Haas), Madrid (IE), Singapore (Nanyang), and Potsdam (Hasso Plattner Institut). Two specialisation tracks available: <strong>Global Management</strong> or <strong>Digital Development</strong>. Triple Crown accredited (AACSB, EQUIS, AMBA). Ranked <strong>~#89 globally</strong> in Executive MBA rankings (QS/FT).</p>
+<h3 id="target-participant_16">Target Participant</h3>
+<p>Ambitious mid-to-senior managers, executives, and entrepreneurs with significant management experience seeking a full general management qualification while working.</p>
+<h3 id="core-topics_14">Core Topics</h3>
+<ul>
+<li>Business fundamentals (finance, strategy, marketing, operations)</li>
+<li>Leadership development with 360° feedback, executive coaching, mentor assignment</li>
+<li>Sustainability and responsible business</li>
+<li>Digital transformation and global business</li>
+<li>Real-world Consultancy Project (major applied assignment)</li>
+<li>International exposure across 4–5 global campuses</li>
+</ul>
+<h3 id="programme-structure-20262027-cohort-starts-9-february-2026">Programme Structure (2026–2027 Cohort — starts 9 February 2026)</h3>
+<p><strong>Core Modules (compulsory)</strong>
+| Session | Dates | Location |
+|&mdash;|&mdash;|&mdash;|
+| Core 1 | 9–14 February 2026 | Oslo (BI campus) |
+| Core 2 | 4–9 May 2026 | Oslo (BI campus) |
+| Core 3 | 7–12 September 2026 | Oslo (BI campus) |
+| Core 4 | 22–26 February 2027 | Berkeley (Haas School of Business) |
+| Core 5 | 20–23 September 2027 | Oslo (BI campus) |</p>
+<p><strong>Elective Modules (choose 3 of 9)</strong>
+| Session | Dates | Location Options |
+|&mdash;|&mdash;|&mdash;|
+| Elective block 1 | 1–5 June 2026 | Oslo or Shanghai |
+| Elective block 2 | 23–27 November 2026 | Madrid (IE), Potsdam (HPI), or Stockholm |
+| Elective block 3 | 31 May – 4 June 2027 | Oslo |
+| Elective block 4 | 7–11 June 2027 | Oslo |</p>
+<p><strong>Online Sessions</strong><br />
+Bi-weekly 4-hour webinars every second Friday afternoon and Saturday morning, throughout the programme between in-class modules.</p>
+<h3 id="fees_1">Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition (full programme)</td>
+<td>NOK 615,000 (~€53,000) — paid in 3 instalments</td>
+</tr>
+<tr>
+<td>Study materials</td>
+<td>Included</td>
+</tr>
+<tr>
+<td>Travel &amp; accommodation</td>
+<td>Not included</td>
+</tr>
+<tr>
+<td>Scholarships</td>
+<td>Available for exceptional candidates (priority to NGO workers); apply by 1 December</td>
+</tr>
+</tbody>
+</table>
+<h3 id="admissions_1">Admissions</h3>
+<p>Applications reviewed on a rolling basis. Norwegian State Educational Loan Fund eligible.</p>
+<hr />
+<h2 id="18-nhh-norwegian-school-of-economics-executive-mba">18. NHH Norwegian School of Economics — Executive MBA</h2>
+<p><strong>Provider:</strong> NHH Norwegian School of Economics (Norges Handelshøyskole)<br />
+<strong>Location:</strong> Oslo (primary) · Bergen · international study trips<br />
+<strong>Language:</strong> Norwegian<br />
+<strong>Website:</strong> nhh.no/en/executive/executive-mba<br />
+<strong>Accreditation:</strong> Triple Crown (AACSB, EQUIS, AMBA) · CEMS member</p>
+<h3 id="overview_17">Overview</h3>
+<p>NHH&rsquo;s Executive MBA is a 24-month part-time degree (90 ECTS) designed for working managers ready to step up to senior or executive leadership. The programme blends case-based and problem-based pedagogy with direct application to participants&rsquo; own organisations. Sessions are gathering-based (Thursday–Saturday weekends) and held primarily in Oslo, plus a residential week at NHH in Bergen and two international study trips. A dedicated Academic Director follows each cohort for the full two years. 100% of 2024 participants stated they would recommend the programme.</p>
+<p>Teaching is in Norwegian, making this programme best suited to Norwegian-speaking or Scandinavian participants.</p>
+<h3 id="specialisations">Specialisations</h3>
+<p>Two tracks are offered, sharing a common core of economics, strategy, and management (&gt;2/3 of the programme):</p>
+<table>
+<thead>
+<tr>
+<th>Specialisation</th>
+<th>Start</th>
+<th>Locations</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strategic Management</strong></td>
+<td>January 2026 (rolling admission)</td>
+<td>Oslo · Bergen · Paris · Singapore</td>
+<td>NOK 545,000 (~€47,000)</td>
+</tr>
+<tr>
+<td><strong>Seafood Management</strong></td>
+<td>January 2027</td>
+<td>Oslo · Bergen · Bergen (NHH campus) · Singapore</td>
+<td>NOK TBC</td>
+</tr>
+</tbody>
+</table>
+<p><em>A third specialisation — Management Control — is also available (modules in Oslo, Bergen, Milan and Singapore).</em></p>
+<h3 id="programme-structure">Programme Structure</h3>
+<p>Four subject modules delivered over two years, with a master&rsquo;s thesis (30 ECTS):</p>
+<p><strong>Common core (all specialisations):</strong>
+- Economics, strategy, and competitive analysis
+- Leadership and organisational behaviour
+- Finance, accounting, and management control
+- Technology, digitalisation, and sustainability</p>
+<p><strong>Strategic Management specialisation adds:</strong>
+- Advanced strategic analysis and competitive advantage
+- Strategy implementation and change leadership
+- Sustainable business models and global strategy</p>
+<p><strong>Seafood Management specialisation adds:</strong>
+- Seafood industry economics and value chains
+- Sustainability and innovation in aquaculture/fisheries
+- Strategic analysis for seafood/maritime sectors
+- Management control and marketing in seafood context</p>
+<h3 id="format-schedule">Format &amp; Schedule</h3>
+<ul>
+<li>Part-time gathering-based: typically Thursday–Saturday once or twice a month</li>
+<li>Sessions primarily in Oslo; residential module at NHH Bergen</li>
+<li>Two international study trips (~1 week each): Europe (~NOK 15,000 travel/accom) and Asia/USA (~NOK 35,000)</li>
+<li>Mandatory attendance; absences covered by supplementary written assignment</li>
+<li>Tuition includes teaching, literature, lunch and refreshments; accommodation extra</li>
+</ul>
+<h3 id="fees_2">Fees</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition (Strategic Management)</td>
+<td>NOK 545,000 (~€47,000)</td>
+</tr>
+<tr>
+<td>International study trip – Europe</td>
+<td>~NOK 15,000 extra</td>
+</tr>
+<tr>
+<td>International study trip – Asia/USA</td>
+<td>~NOK 35,000 extra</td>
+</tr>
+<tr>
+<td>Semester fee (Sammen)</td>
+<td>NOK 600/semester</td>
+</tr>
+</tbody>
+</table>
+<p><em>No scholarships available. Norwegian State Educational Loan Fund (Lånekassen) financing may be applicable.</em></p>
+<h3 id="admission-requirements">Admission Requirements</h3>
+<ul>
+<li>Bachelor&rsquo;s degree or equivalent (180 ECTS)</li>
+<li>Minimum 3 years of relevant work experience post-graduation</li>
+<li>Norwegian language proficiency (programme taught in Norwegian)</li>
+<li>Rolling admission for Strategic Management (Jan 2026 start)</li>
+</ul>
+<p><strong>Contact:</strong> Gro Tufte (Admissions Manager) — +47 957 31 554 · nhh.no/en/executive/executive-mba</p>
+<hr />
+<h2 id="19-copenhagen-business-school-executive-mba-cbs-emba">19. Copenhagen Business School — Executive MBA (CBS EMBA)</h2>
+<p><strong>Provider:</strong> Copenhagen Business School (CBS)<br />
+<strong>Location:</strong> Copenhagen, Denmark (+ global modules in Shanghai, Chicago, Mumbai)<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> cbs.dk/emba<br />
+<strong>FT Ranking:</strong> #59 globally (EMBA) · #7 globally for Work Experience · Triple Crown accredited (AACSB, EQUIS, AMBA)</p>
+<h3 id="overview_18">Overview</h3>
+<p>One of Scandinavia&rsquo;s most respected EMBA programmes, rooted in the distinctly Nordic model of leadership — collaborative, ethical, sustainability-focused, and globally minded. The programme runs 26 months part-time with monthly Wednesday–Saturday sessions in Copenhagen, plus three week-long international modules (Shanghai, Chicago/Kellogg, Mumbai). Unique flexible design: can be taken as a full &ldquo;EMBA in One Go&rdquo; or progressively through four standalone Executive Certificates, each earned independently and stackable toward the degree within five years. 70% of participants are employer-sponsored.</p>
+<h3 id="target-participant_17">Target Participant</h3>
+<p>Professionals with a bachelor&rsquo;s degree and a minimum of 3 years of managerial experience. Average participant: 39 years old, 16 years of work experience, 9 years of management experience. Cohort of 40, with 46% international.</p>
+<h3 id="programme-structure_1">Programme Structure</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Period</th>
+<th>Certificate</th>
+<th>Key Courses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Term 1</td>
+<td>Sep–Dec 2026</td>
+<td>EC: General Management</td>
+<td>Financial &amp; Managerial Accounting · Reflexive Leadership · Corporate Sustainability · Digitalisation (Shanghai module)</td>
+</tr>
+<tr>
+<td>Term 2</td>
+<td>Jan–Jun 2027</td>
+<td>EC: Exploring Business Potentials</td>
+<td>Economics &amp; Financial Markets · Leadership &amp; Organisational Behaviour · Marketing (Chicago/Kellogg module) · Supply Chain Management</td>
+</tr>
+<tr>
+<td>Term 3</td>
+<td>Aug–Dec 2027</td>
+<td>EC: Leading Strategic Execution</td>
+<td>Corporate Finance · Leading Change · Strategic Management · Corporate Entrepreneurship (Mumbai module)</td>
+</tr>
+<tr>
+<td>Term 4</td>
+<td>Jan–Oct 2028</td>
+<td>Concentration + Thesis</td>
+<td>Choose one: Digitalisation &amp; AI · Entrepreneurship · Governance &amp; Sustainability · Finance</td>
+</tr>
+</tbody>
+</table>
+<p>Culminates in an <strong>Integrated Strategy Project</strong> (thesis) addressing a real challenge in the participant&rsquo;s own organisation, with academic and external advisors.</p>
+<h3 id="core-topics_15">Core Topics</h3>
+<ul>
+<li>Reflexive and adaptive leadership · leading change · leadership &amp; organisational behaviour</li>
+<li>Corporate sustainability and governance (Nordic model)</li>
+<li>Digitalisation and AI strategy</li>
+<li>Strategic management and corporate entrepreneurship</li>
+<li>Finance: accounting, corporate finance, financial markets</li>
+<li>Marketing, supply chain management</li>
+<li>Global business and cross-cultural leadership</li>
+</ul>
+<h3 id="executive-certificates-standalone-option">Executive Certificates (Standalone Option)</h3>
+<p>Each term also earns a standalone Executive Certificate, usable independently or as part of the EMBA pathway:</p>
+<table>
+<thead>
+<tr>
+<th>Certificate</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EC – General Management</td>
+<td>DKK 110,000 (~€14,700)</td>
+</tr>
+<tr>
+<td>EC – Exploring Business Potentials</td>
+<td>DKK 130,000 (~€17,400)</td>
+</tr>
+<tr>
+<td>EC – Leading Strategic Execution</td>
+<td>DKK 135,000 (~€18,000)</td>
+</tr>
+<tr>
+<td>Concentration + Thesis</td>
+<td>DKK 110,000 (~€14,700)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fees-dates">Fees &amp; Dates</h3>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Start</th>
+<th>Duration</th>
+<th>Fee</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EMBA in One Go</td>
+<td>Sep 2026</td>
+<td>26 months (graduation Nov 2028)</td>
+<td>DKK 450,000 (~€60,000)</td>
+</tr>
+<tr>
+<td>Executive Certificates</td>
+<td>Sep 2026 (Term 1)</td>
+<td>4–9 months per certificate</td>
+<td>See above</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Application deadlines (Sep 2026 start):</strong> 1st round 18 Jan 2026 · 2nd round 29 Mar 2026 · 3rd round 21 Jun 2026 · Final 9 Aug 2026</p>
+<p><em>Fees include books and catering in class. Flights and accommodation not included. Non-EU citizens pay an additional study tax of DKK 17,200 (~€2,300). Gross salary deduction scheme available for Denmark-based participants.</em></p>
+<p><strong>Contact:</strong> Lone Ryevad Boysen — +45 3815 6002 · Marcel Austin-Martin — +45 3815 6032 · mba@cbs.dk</p>
+<hr />
+<h2 id="20-stockholm-school-of-economics-mba-executive-format-sse-mba">20. Stockholm School of Economics — MBA Executive Format (SSE MBA)</h2>
+<p><strong>Provider:</strong> Stockholm School of Economics (SSE)<br />
+<strong>Location:</strong> Stockholm, Sweden (+ Riga, Singapore, Silicon Valley)<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> hhs.se/en/education/mba<br />
+<strong>Accreditation:</strong> Triple Crown (AACSB, EQUIS, AMBA) · CEMS member<br />
+<strong>FT Ranking:</strong> #1 EMBA in Nordics · #40 globally · #11 for ESG content &amp; international experience · #21 for work experience (FT 2025)</p>
+<h3 id="overview_19">Overview</h3>
+<p>SSE is Sweden&rsquo;s oldest private university, founded in 1909, with deep ties to major Scandinavian corporates (IKEA, Ericsson, H&amp;M, Klarna, Spotify). Its MBA Executive Format is the top-ranked EMBA in the Nordics and one of the most internationally focused in the region. At 18 months, it is the shortest of the Nordic EMBA programmes. Delivered in English with a general management foundation, the programme uniquely partners with Stanford Engineering Center for Global &amp; Online Education for business analytics, machine learning, and AI skills — earning participants the MBA degree plus three additional certificates (Stanford, NUS, GNAM). MBALive® pedagogy ensures applied learning through live projects in real organisations throughout the programme.</p>
+<h3 id="target-participant_18">Target Participant</h3>
+<p>Business leaders and senior professionals wanting to operate at global level. Minimum 5 years of relevant professional experience. Average participant is typically 38–42 years old with significant management responsibility.</p>
+<h3 id="programme-structure_2">Programme Structure</h3>
+<p>General management foundation + elective modules, organised around theme modules:</p>
+<p><strong>Core themes:</strong>
+- Leadership and personal development
+- Strategy and competitive advantage
+- Finance and business performance
+- Digital transformation and business analytics (Stanford CGOE partnership)
+- Sustainability and ESG (ranked #11 globally by FT)
+- Global business and cross-cultural management</p>
+<p><strong>Elective tracks</strong> (choose to personalise):
+- Nordic Entrepreneurship · Finance · Digital Transformation · Branding · Management · Global Business</p>
+<p><strong>Three mandatory international field trips:</strong>
+- Riga, Latvia (SSE Riga campus)
+- Singapore (National University of Singapore — NUS certificate)
+- Silicon Valley, USA (innovation &amp; tech immersion)</p>
+<p><strong>Additional certificates earned alongside MBA:</strong>
+- Stanford Engineering CGOE — Business analytics, ML &amp; AI
+- NUS Singapore — Global business perspective
+- GNAM — Global Network for Advanced Management</p>
+<h3 id="fees-dates_1">Fees &amp; Dates</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition</td>
+<td>SEK 645,000 (~€56,000) excl. VAT</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>18 months part-time</td>
+</tr>
+<tr>
+<td>Next start</td>
+<td>December 2026</td>
+</tr>
+<tr>
+<td>Application intake rounds</td>
+<td>April · May · June · August · September · October 2026</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>Monthly sessions Stockholm + 3 intl field trips</td>
+</tr>
+</tbody>
+</table>
+<p><em>VAT not added for organisations outside Sweden.</em></p>
+<p><strong>Contact:</strong> hhs.se/en/education/mba · admissions via rolling online application · no application fee</p>
+<hr />
+<h2 id="21-henley-business-school-nordic-executive-mba-global">21. Henley Business School Nordic — Executive MBA Global</h2>
+<p><strong>Provider:</strong> Henley Business School (University of Reading) — Nordic operations<br />
+<strong>Locations:</strong> Helsinki 🇫🇮 · Copenhagen 🇩🇰 · Greenlands (UK) · immersion trips (South Africa, USA, Singapore)<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> henleynordic.com/emba<br />
+<strong>Accreditation:</strong> Triple Crown (AACSB, EQUIS, AMBA) · part of University of Reading<br />
+<strong>FT Ranking:</strong> #1 EMBA in Nordics (FT 2025) · #33 globally · #10 in Europe · #20 globally for executive education</p>
+<h3 id="overview_20">Overview</h3>
+<p>Henley is the oldest business school in the UK (founded 1945) and one of only ~1% of business schools globally with triple accreditation. Its Nordic EMBA operates through offices in Helsinki and Copenhagen, making it one of the very few internationally accredited, university-level EMBA degrees based in Scandinavia. The Nordic cohort studies alongside the global UK cohort, combining local Nordic context with a genuinely international programme. Personal development and leadership coaching are woven throughout all three stages — this is a notably coaching-heavy programme compared to peers.</p>
+<h3 id="target-participant_19">Target Participant</h3>
+<p>Experienced managers and leaders, typically 10+ years of professional experience. Minimum 3 years management experience. Strong personal development focus — suited to those who want deep self-reflection alongside business rigor.</p>
+<h3 id="programme-structure_3">Programme Structure</h3>
+<p>Three stages (90 ECTS) with optional staged awards:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Award on Completion</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stage 1</td>
+<td>Certificate</td>
+<td>Fundamental Business Foundations: people, operations, finance</td>
+</tr>
+<tr>
+<td>Stage 2</td>
+<td>Diploma</td>
+<td>Strategy &amp; Context — managing stakeholders, strategic choices</td>
+</tr>
+<tr>
+<td>Stage 3</td>
+<td>Master&rsquo;s degree</td>
+<td>Taking Leadership to a Higher Level — leading complex change</td>
+</tr>
+</tbody>
+</table>
+<p>14 core study modules + elective modules + research-based project<br />
+Personal, leadership &amp; professional development flows through all stages<br />
+Joint workshops at Greenlands (UK) with global cohort<br />
+3-day Managing People workshop in Helsinki (Nordic leadership &amp; SDGs)</p>
+<p><strong>Immersion trips</strong> (included in fee):
+- South Africa — working with NGOs/charities in emerging markets
+- USA — start-up and innovation ecosystem immersion
+- Singapore or equivalent</p>
+<h3 id="fees-dates_2">Fees &amp; Dates</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition (early bird)</td>
+<td>€47,000 + VAT (applications before 15 Mar 2026)</td>
+</tr>
+<tr>
+<td>Standard fee</td>
+<td>Higher — contact for current rate</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>24 months · 50 workshop days total</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>Workshops Helsinki/Copenhagen + UK + immersion trips</td>
+</tr>
+<tr>
+<td>Scholarships</td>
+<td>Available for Nordic cohort — see henleynordic.com</td>
+</tr>
+<tr>
+<td>Gross salary deduction</td>
+<td>Available for Denmark-based participants (bruttolønsordning)</td>
+</tr>
+</tbody>
+</table>
+<p><em>VAT rules vary: Finland applies 25.5% VAT for foreign university programmes. Check current VAT status when applying.</em></p>
+<p><strong>Contact:</strong> Matti Katara (Business Director, EMBA) — +358 46 850 5858 · matti.katara@henleynordic.com<br />
+Paula Kilpinen (Managing Director) — +358 40 509 0894 · paula.kilpinen@henleynordic.com</p>
+<hr />
+<h2 id="22-aalto-university-executive-mba-aalto-emba">22. Aalto University — Executive MBA (Aalto EMBA)</h2>
+<p><strong>Provider:</strong> Aalto University Executive Education (Aalto EE)<br />
+<strong>Location:</strong> Helsinki, Finland (Töölö campus) + optional international modules<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> aaltoee.fi/en/programs/aalto-executive-mba-in-helsinki<br />
+<strong>Accreditation:</strong> Triple Crown (AACSB, EQUIS, AMBA)<br />
+<strong>FT Ranking:</strong> #92 globally (FT EMBA 2025) · #12 globally for participant satisfaction · #6 in Europe for satisfaction · Best EMBA in Nordics by participant satisfaction · 99% graduation rate</p>
+<h3 id="overview_21">Overview</h3>
+<p>Aalto University is Finland&rsquo;s leading research university, formed from the merger of Helsinki University of Technology, Helsinki School of Economics, and University of Art and Design. The Aalto EMBA is the flagship senior leadership programme, designed for those already in or moving to C-suite and senior executive positions (typically 10+ years experience). Known for the highest participant satisfaction among Nordic EMBAs, and for integrating radical creativity and entrepreneurial mindset — reflecting Aalto&rsquo;s unique tech-design-business DNA. Module structure follows a six-week learning cycle with 2.5-day weekend sessions approximately once a month.</p>
+<h3 id="target-participant_20">Target Participant</h3>
+<p>Individuals with significant professional experience (typically 10+ years) aiming for senior leadership roles. Average age ~40.</p>
+<h3 id="programme-structure_4">Programme Structure</h3>
+<p>Four core business areas: <strong>Strategy · Leadership · Finance · Marketing</strong> with special emphasis on strategy and leadership in a global context.</p>
+<p><strong>Core modules (11):</strong> Personal and Organisational Leadership · Financial Accounting · Management Accounting · Economics for Executives · Corporate Finance · Strategic Management · International Marketing Management · Operations Management · Management Communication · International Strategic HR Management · Service Design</p>
+<p><strong>Elective modules</strong> (minimum 8, from 5 theme areas):
+- Strategy &amp; Change Management · Customers &amp; Markets · Leadership &amp; Management · Entrepreneurship &amp; Innovation · Operations &amp; Process</p>
+<p><strong>Optional specialisations</strong> (additional fee):
+- Global Business — elective modules at ESADE (Spain) and KEDGE (France) + 2 extra electives
+- Finance · Entrepreneurship</p>
+<p><strong>International options:</strong>
+- Study tours (~5 days abroad, world-class faculty from Harvard/Yale) — count as one elective
+- Exchange programme at partner universities (1 module to 4 months)
+- Aalto Executive Summit — cutting-edge research and innovations showcase</p>
+<h3 id="fees-dates_3">Fees &amp; Dates</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition</td>
+<td>€52,000 + VAT</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>24 months (Oct 2026 – Nov 2028)</td>
+</tr>
+<tr>
+<td>Application deadline</td>
+<td>29 August 2026</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>Weekend modules (~2.5 days/month), Helsinki</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>90 ECTS, Aalto University School of Business</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contact:</strong> aaltoee.fi/en/programs/aalto-executive-mba-in-helsinki</p>
+<hr />
+<h2 id="23-aalto-university-mba-aalto-mba">23. Aalto University — MBA (Aalto MBA)</h2>
+<p><strong>Provider:</strong> Aalto University Executive Education (Aalto EE)<br />
+<strong>Location:</strong> Helsinki, Finland + optional international modules<br />
+<strong>Language:</strong> English<br />
+<strong>Website:</strong> aaltoee.fi/en/programs/aalto-mba<br />
+<strong>Accreditation:</strong> Triple Crown (AACSB, EQUIS, AMBA)</p>
+<h3 id="overview_22">Overview</h3>
+<p>The Aalto MBA is the more accessible sibling to the Aalto EMBA — same Triple Crown accreditation and faculty, lower fee, aimed at ambitious professionals earlier in their management career (3+ years rather than 10+). Broadly identical curriculum structure to the EMBA across the four core areas of strategy, leadership, finance, and marketing, with the same elective flexibility and international options. Diploma granted by Aalto University School of Business.</p>
+<h3 id="target-participant_21">Target Participant</h3>
+<p>Ambitious professionals with minimum 3 years of relevant experience who want to accelerate into leadership roles. Suitable for those not yet at the seniority level typically expected for an EMBA.</p>
+<h3 id="programme-structure_5">Programme Structure</h3>
+<p>Same general management foundation as the Aalto EMBA:
+- Strategy, Leadership, Finance, Marketing — four core areas
+- Elective modules for personalisation
+- Optional Finance, Entrepreneurship, or Global Business specialisation tracks
+- Personal and Professional Development Process throughout</p>
+<h3 id="fees-dates_4">Fees &amp; Dates</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition</td>
+<td>€37,800 + VAT</td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>24 months (Jan 2027 – Dec 2028)</td>
+</tr>
+<tr>
+<td>Application deadline</td>
+<td>16 November 2026</td>
+</tr>
+<tr>
+<td>Format</td>
+<td>Evenings + weekends, Helsinki</td>
+</tr>
+<tr>
+<td>Degree</td>
+<td>90 ECTS, Aalto University School of Business</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contact:</strong> aaltoee.fi/en/programs/aalto-mba</p>
+<hr />
+<h2 id="contact-information">Contact Information</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Programme</th>
+<th>Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>INSEAD Collaborative Leadership</td>
+<td>CLP_contact@insead.edu — +33 1 60 72 42 03</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INSEAD HILP</td>
+<td>HILP_Contact@insead.edu — +33 1 60 72 40 38</td>
+</tr>
+<tr>
+<td>3</td>
+<td>INSEAD Leading Teams</td>
+<td>LTP_contact@insead.edu — +33 1 60 72 42 03</td>
+</tr>
+<tr>
+<td>4</td>
+<td>INSEAD Leading Successful Change</td>
+<td>LSC_Contact@insead.edu — +33 1 60 72 42 03</td>
+</tr>
+<tr>
+<td>5</td>
+<td>INSEAD Leading Change Digital</td>
+<td>CDT_Contact@insead.edu — +33 1 60 72 45 27</td>
+</tr>
+<tr>
+<td>6</td>
+<td>IMD HPL</td>
+<td>imd.org/leadership/hpl · admissions@imd.org</td>
+</tr>
+<tr>
+<td>7</td>
+<td>IMD OWP</td>
+<td>imd.org/owp · admissions@imd.org</td>
+</tr>
+<tr>
+<td>8</td>
+<td>IMD TBL</td>
+<td>imd.org/management/tbl · admissions@imd.org</td>
+</tr>
+<tr>
+<td>9</td>
+<td>LBS Senior Executive Programme</td>
+<td>sep@london.edu · +44 (0)20 7000 7391</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Oxford Strategic Leadership</td>
+<td>sbs.ox.ac.uk/strategic-leadership · +44 (0)1865 422757</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Cambridge ALP</td>
+<td>execed@jbs.cam.ac.uk · jbs.cam.ac.uk/executive-education</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Wharton High-Potential Leaders</td>
+<td>execed@wharton.upenn.edu · +1.215.898.1776</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Wharton The Resilient Leader</td>
+<td>execed@wharton.upenn.edu · +1.215.898.1776</td>
+</tr>
+<tr>
+<td>14</td>
+<td>INSEAD Leadership Transition</td>
+<td>LT_Contact@insead.edu — +33 1 60 72 42 03</td>
+</tr>
+<tr>
+<td>15</td>
+<td>INSEAD Lead the Future</td>
+<td>LTF_Contact@insead.edu — +33 1 60 72 42 03</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Solstrand</td>
+<td>Gisken Holst — gisken.holst@aff.no — +47 977 37 017</td>
+</tr>
+<tr>
+<td>17</td>
+<td>BI EMBA</td>
+<td>bi.no/en/programmes-and-individual-courses/master-programmes/executive-mba/</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NHH Executive MBA</td>
+<td>Gro Tufte (Admissions) — +47 957 31 554 · nhh.no/en/executive/executive-mba</td>
+</tr>
+<tr>
+<td>19</td>
+<td>CBS EMBA</td>
+<td>Lone Ryevad Boysen +45 3815 6002 · Marcel Austin-Martin +45 3815 6032 · mba@cbs.dk · cbs.dk/emba</td>
+</tr>
+<tr>
+<td>20</td>
+<td>SSE MBA Executive Format</td>
+<td>hhs.se/en/education/mba · rolling online application</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Henley EMBA – Global (Nordic)</td>
+<td>Matti Katara +358 46 850 5858 · matti.katara@henleynordic.com · henleynordic.com/emba</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Aalto Executive MBA</td>
+<td>aaltoee.fi/en/programs/aalto-executive-mba-in-helsinki</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Aalto MBA</td>
+<td>aaltoee.fi/en/programs/aalto-mba</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Sources: AFF (aff.no), BI Norwegian Business School (bi.no), INSEAD Executive Education brochures 2025–2026, IMD (imd.org), London Business School (london.edu), Oxford Saïd Business School (sbs.ox.ac.uk), Cambridge Judge Business School (jbs.cam.ac.uk), Wharton Executive Education (executiveeducation.wharton.upenn.edu), NHH Norwegian School of Economics (nhh.no), Copenhagen Business School (cbs.dk/emba), Stockholm School of Economics (hhs.se), Henley Business School Nordic (henleynordic.com), Aalto University Executive Education (aaltoee.fi). All fees exclude VAT/GST, travel, and accommodation unless stated. Fees and dates subject to change — verify directly with providers before applying.</em></p>
+</body>
+</html>
